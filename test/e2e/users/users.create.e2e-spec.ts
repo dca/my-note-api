@@ -3,9 +3,6 @@ import * as request from 'supertest';
 import { Test } from '@nestjs/testing';
 import { INestApplication, ValidationPipe } from '@nestjs/common';
 
-import { UserModule } from '../../../src/module/user/user.module';
-import { UserService } from '../../../src/module/user/user.service';
-import { UserRepository } from '../../../src/module/user/model/user.repository';
 import { AppModule } from '../../../src/app.module';
 
 describe('User', () => {
@@ -33,8 +30,6 @@ describe('User', () => {
     const res = await request(app.getHttpServer())
       .post('/v1/user')
       .send(record);
-
-    // console.log('res %j', res.body);
 
     expect(res.status).toBe(200);
     expect(res.body).toHaveProperty('email', record.email);
