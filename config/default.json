@@ -1,0 +1,22 @@
+
+{
+  "database": {
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "root",
+    "database": "my_note_dev",
+    "dropSchema": false,
+    "synchronize": true
+  },
+
+  "aws": {
+    "accessKeyId": "",
+    "secretAccessKey": ""
+  },
+
+  "jwtSecret": "secretKey 49dhcilssorhi8bywl;cmasokefju9fjwhejv,mlffoeokdfdknjfbhfbhjsjbi",
+
+  "resetPwdTokenExpireSec": 600
+}

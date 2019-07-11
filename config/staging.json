@@ -1,0 +1,10 @@
+
+{
+  "database": {
+
+  },
+
+  "jwtsecret": "jwtsecret",
+
+  "resetPwdTokenExpireSec": 600
+}

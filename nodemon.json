@@ -1,0 +1,6 @@
+{
+  "watch": ["dist"],
+  "ext": "js",
+  "exec_origin": "node dist/main",
+  "exec": "ts-node -r tsconfig-paths/register src/main.ts"
+}
